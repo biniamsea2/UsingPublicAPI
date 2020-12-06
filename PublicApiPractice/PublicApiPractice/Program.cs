@@ -14,7 +14,7 @@ namespace PublicApiPractice
             // must install package (microsoft.aspnet.webapi.client)
             var httpClient = HttpClientFactory.Create();
             // api url saved in a string varibale 
-            string url = "https://anapioficeandfire.com/api/characters";
+            string url = "https://anapioficeandfire.com/api/characters/583";
             // our result from the api, with an await and getStringAsync
             var data = await httpClient.GetStringAsync(url);
 
