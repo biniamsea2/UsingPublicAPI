@@ -33,5 +33,9 @@ namespace PublicApiPractice
             //Console.WriteLine(data);
             //Console.WriteLine(httpResponse);
         }
+        class Data2
+        {
+
+        }
     }
 }
