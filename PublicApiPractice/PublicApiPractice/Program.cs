@@ -17,7 +17,7 @@ namespace PublicApiPractice
             // api url saved in a string varibale 
             string url = "https://anapioficeandfire.com/api/characters/583";
             // our result from the api, with an await. GetstringAsync is used when our response will be a string in an asynchronous method
-            var data = await httpClient.GetStringAsync(url);
+            // var data = await httpClient.GetStringAsync(url);
             // getasnyc gives us the repsonse back asynchrrnously, getAsync only accepts the url of the api as its only arguement, dont think it accepts tokens..?
             // using the httpResponseMessage gives us access to the repsonse code and headers (200, 400 etc)
             HttpResponseMessage httpResponse = await httpClient.GetAsync(url);
@@ -25,13 +25,9 @@ namespace PublicApiPractice
             if (httpResponse.StatusCode == HttpStatusCode.OK)
             {
                 var content = httpResponse.Content;
-                var data2 = await content.ReadAsStringAsync();
-                Console.WriteLine(data2);
+                var data = await content.ReadAsStringAsync();
+                Console.WriteLine(data);
             }
-
-
-            //Console.WriteLine(data);
-            //Console.WriteLine(httpResponse);
         }
         class Data2
         {
