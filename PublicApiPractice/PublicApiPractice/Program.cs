@@ -24,9 +24,34 @@ namespace PublicApiPractice
 
             if (httpResponse.StatusCode == HttpStatusCode.OK)
             {
+                //Console.WriteLine(await httpResponse.Content.ReadAsStringAsync());
+                
+                // line above is a one liner for the 3 lines below:
                 var content = httpResponse.Content;
-                var data = await content.ReadAsStringAsync();
+
+                // need to change ReadAsStringAsync to ReadAsAsync of the type of class you want when getting data 
+                // the way you want it from the api
+                var data = await content.ReadAsAsync<Data>();
                 Console.WriteLine(data);
+            }
+            else
+            {
+                Console.WriteLine("Couldn't get data.");
+            }
+        }
+        // created a class based on properties (info) I want from the api
+        class Data
+        {
+            public int ID { get; set; }
+            public string Name { get; set; }
+            public string Gender { get; set; }
+            public string Culture { get; set; }
+            public string Born { get; set; }
+
+            // need to override the ToString method to print the way we want it to
+            public override string ToString()
+            {
+                return $"My name is {Name}, a {Gender}, of {Culture}, born {Born}";
             }
         }
     }
