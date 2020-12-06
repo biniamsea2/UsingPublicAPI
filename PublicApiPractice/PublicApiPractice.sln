@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PublicApiPractice", "PublicApiPractice\PublicApiPractice.csproj", "{60982111-6369-4492-922A-97B792B2ABF2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60982111-6369-4492-922A-97B792B2ABF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60982111-6369-4492-922A-97B792B2ABF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60982111-6369-4492-922A-97B792B2ABF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60982111-6369-4492-922A-97B792B2ABF2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A75B01E-D6E3-49BA-84B4-7DEED84FE561}
+	EndGlobalSection
+EndGlobal
