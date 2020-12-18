@@ -1,4 +1,4 @@
-### Using the game of thrones public API
+### Using the Game of Thrones public API
 
 ##### Worked on:
 1) Request data from public api using http request (Get)
